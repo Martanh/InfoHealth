@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>InfoHealth/Formulario</title>
+    </head>
+    <body>
+        <p><a href="../index.html"><img width="230" height="130" src="../imagenes/logo.png" alt="Logo de InfoHealth."></a></p>
+        
+        <p><a href="../index.html">Página principal</a></p>
+        <p><a href="busquedaAvanzada.html">Búsqueda avanzada</a></p>
+
+        <h1>Formulario de contacto</h1>
+        <form action="respuesta/respuestaFormulario.html" method="post">
+            <p>
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="asunto" id="asunto" required>
+            </p>
+
+            <p>
+                <label for="comentario">Comentario o pregunta:</label>
+                <textarea rows="6" cols="40" name="comentario" id="comentario" required></textarea>
+            </p>
+
+            <label for="yosoy">Yo soy:</label>
+            <select name="soy" id="yosoy">
+                <option value="opcion">Selecciona una opción</option>
+                <option value="paciente">Paciente</option>
+                <option value="cientifico">Científico</option>
+                <option value="medico">Médico</option>
+                <option value="educador">Educador</option>
+                <option value="fabricante">Fabricante</option>
+                <option value="periodista">Periodista</option>
+            </select>
+
+            <p>
+                <legend>Fecha de nacimiento:</legend>
+                <input type="date" id="fecha" name="nacimiento" value="fecha">
+            </p>
+
+            <p>
+                <legend>Sexo:</legend>
+                <input type="radio" id="mujer" name="sexo" value="mujer">Mujer<br>
+                <input type="radio" id="hombre" name="sexo" value="hombre">Hombre<br>
+                <input type="radio" id="otro" name="sexo" value="otro">Otro<br>
+            </p>
+  
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="correo" placeholder="ejemplo@email.com">
+            </p>
+
+            <p>
+                <input type="checkbox" id="info" name="casillainfo" value="info">Deseo recibir más información.
+            </p>
+
+            <input type="submit">
+
+        </form>
+
+        <p>Marta Nadal Herraiz y Jazmín Ramírez Agudelo</p>
+        <p>©Copyright.  Todos los derechos reservados. 2022</p>
+        <p>Puedes volver a la página principal, haciendo click en logo o a través del siguiente enlace:<a href="../index.html">aquí</a></p>
+    </body>
+</html>
